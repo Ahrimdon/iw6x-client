@@ -66,7 +66,7 @@ namespace branding
 				localized_strings::override("LUA_MENU_MULTIPLAYER_CAPS", "IW6x: MULTIPLAYER\n");
 			}
 
-			localized_strings::override("LUA_MENU_LEGAL_COPYRIGHT", "IW6x: " VERSION " by X Labs.\n");
+			localized_strings::override("LUA_MENU_LEGAL_COPYRIGHT", "" "");
 
 			utils::hook::call(SELECT_VALUE(0x1403BDABA, 0x140414424), dvar_set_string_stub);
 			ui_get_formatted_build_number_hook.create(
@@ -78,7 +78,7 @@ namespace branding
 				const auto y = 0;
 				const auto scale = 0.5f;
 				float color[4] = {0.666f, 0.666f, 0.666f, 0.666f};
-				const auto* text = "IW6x: " VERSION;
+				const auto* text = "";
 
 				auto* font = game::R_RegisterFont("fonts/normalfont");
 				if (!font) return;
