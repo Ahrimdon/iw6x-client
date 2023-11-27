@@ -66,7 +66,7 @@ namespace branding
 				localized_strings::override("LUA_MENU_MULTIPLAYER_CAPS", "IW6x: MULTIPLAYER\n");
 			}
 
-			localized_strings::override("LUA_MENU_LEGAL_COPYRIGHT", "" "");
+			localized_strings::override("LUA_MENU_LEGAL_COPYRIGHT", "");
 
 			utils::hook::call(SELECT_VALUE(0x1403BDABA, 0x140414424), dvar_set_string_stub);
 			ui_get_formatted_build_number_hook.create(
