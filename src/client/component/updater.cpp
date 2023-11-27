@@ -9,7 +9,7 @@
 
 #include <version.hpp>
 
-#define APPVEYOR_ARTIFACT_BASE "https://master.xlabs.dev:444"
+#define APPVEYOR_ARTIFACT_BASE "https://server.alterware.dev:444"
 #define APPVEYOR_PROJECT "iw6x"
 #define APPVEYOR_BRANCH GIT_BRANCH
 
