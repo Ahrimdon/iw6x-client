@@ -35,10 +35,10 @@ namespace motd
 	public:
 		void post_load() override
 		{
-			motd_future = utils::http::get_data_async("https://xlabs.dev/iw6/motd.txt");
+			motd_future = utils::http::get_data_async("https://alterware.dev/iw6/motd.txt");
 			std::thread([]()
 			{
-				auto data = utils::http::get_data("https://xlabs.dev/iw6/motd.png");
+				auto data = utils::http::get_data("https://alterware.dev/iw6/motd.png");
 				if (data)
 				{
 					images::override_texture("iotd_image", data.value());
